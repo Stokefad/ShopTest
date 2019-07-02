@@ -43,13 +43,23 @@ class TabBarView : UIView {
         let sellButton = UIButton()
         let buyButton = UIButton()
         
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = UIColor.black
         
-        buyButton.frame = CGRect(x: 0, y: 0, width: self.frame.width / 2, height: 80)
-        sellButton.frame = CGRect(x: self.frame.width / 2, y: 0, width: self.frame.width / 2, height: 80)
+        buyButton.frame = CGRect(x: 0, y: 0, width: self.frame.width / 2 - 0.5, height: 79)
+        sellButton.frame = CGRect(x: self.frame.width / 2 + 0.5, y: 0, width: self.frame.width / 2 - 0.5, height: 79)
+        
+        buyButton.backgroundColor = UIColor.white
+        sellButton.backgroundColor = UIColor.white
         
         sellButton.setTitle("Sell", for: UIControl.State())
         buyButton.setTitle("Buy", for: UIControl.State())
+        
+        if sender is SellVC {
+            sellButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        }
+        else if sender is BuyVC {
+            buyButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        }
         
         sellButton.setTitleColor(UIColor.black, for: UIControl.State())
         buyButton.setTitleColor(UIColor.black, for: UIControl.State())

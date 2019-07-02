@@ -49,8 +49,6 @@ class SellBuyManager {
             self.serialQueue.sync {
                 DBManager.deleteProduct(model: data)
                 for i in 0 ... SellBuyManager.products.count - 1 {
-                    print(i)
-                    print(SellBuyManager.products.count)
                     if SellBuyManager.products[i] === data {
                         SellBuyManager.products.remove(at: i)
                         break
