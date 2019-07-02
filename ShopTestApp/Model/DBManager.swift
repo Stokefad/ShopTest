@@ -82,8 +82,33 @@ class DBManager {
         
     }
     
-    public class func returnDefaultProducts() -> [Product] {
-        return [Product]()
+    public class func returnDefaultProducts() -> [ProductModel] {
+        guard
+            let url = Bundle.main.url(forResource: "Data", withExtension: "plist"),
+            let list = NSDictionary(contentsOf: url) as? Dictionary<String, Any> else {
+                print("no")
+                return []
+        }
+        
+        var dictList = [Dictionary<String, Any>]()
+        
+        dictList.append(list["ItemOne"] as! [String : Any])
+        dictList.append(list["ItemTwo"] as! [String : Any])
+        dictList.append(list["ItemThree"] as! [String : Any])
+        
+        var modelList = [ProductModel]()
+        
+        for item in dictList {
+            let model = ProductModel()
+            model.descriptionStr = item["description"] as! String
+            model.price = item["price"] as! Double
+            model.title = item["title"] as! String
+            
+            modelList.append(model)
+        }
+        
+        
+        return modelList
     }
     
 }

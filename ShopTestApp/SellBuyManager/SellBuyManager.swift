@@ -18,6 +18,7 @@ class SellBuyManager {
     
     init() {
         SellBuyManager.products = DBManager.retrieveProducts()
+        SellBuyManager.products.append(contentsOf: DBManager.returnDefaultProducts())
         getSellSignal()
         sellBRToRetrieve.accept(SellBuyManager.products)
     }

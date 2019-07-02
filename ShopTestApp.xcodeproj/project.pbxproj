@@ -20,6 +20,7 @@
 		2D05D97122CAC7C7007DF7DD /* SellBuyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D05D97022CAC7C7007DF7DD /* SellBuyManager.swift */; };
 		2D05D97322CAD11F007DF7DD /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D05D97222CAD11F007DF7DD /* ProductModel.swift */; };
 		2D05D97522CB9463007DF7DD /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D05D97422CB9463007DF7DD /* DescriptionView.swift */; };
+		2D05D99922CBD4EF007DF7DD /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D05D99822CBD4EF007DF7DD /* Data.plist */; };
 		7875A8B06211459343C0DB69 /* Pods_ShopTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F35F35BCF1B03B68F2E05D /* Pods_ShopTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		2D05D97022CAC7C7007DF7DD /* SellBuyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellBuyManager.swift; sourceTree = "<group>"; };
 		2D05D97222CAD11F007DF7DD /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		2D05D97422CB9463007DF7DD /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		2D05D99822CBD4EF007DF7DD /* Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		64F35F35BCF1B03B68F2E05D /* Pods_ShopTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA16E9715CBFAFF9587AA78 /* Pods-ShopTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopTestApp.debug.xcconfig"; path = "Target Support Files/Pods-ShopTestApp/Pods-ShopTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D1D1C440177499C9F87D37F4 /* Pods-ShopTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopTestApp.release.xcconfig"; path = "Target Support Files/Pods-ShopTestApp/Pods-ShopTestApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				2D05D94C22CAAF3B007DF7DD /* AppDelegate.swift */,
 				2D05D95622CAAF3C007DF7DD /* Assets.xcassets */,
 				2D05D95B22CAAF3C007DF7DD /* Info.plist */,
+				2D05D99822CBD4EF007DF7DD /* Data.plist */,
 			);
 			path = ShopTestApp;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				2D05D95A22CAAF3C007DF7DD /* LaunchScreen.storyboard in Resources */,
 				2D05D95722CAAF3C007DF7DD /* Assets.xcassets in Resources */,
+				2D05D99922CBD4EF007DF7DD /* Data.plist in Resources */,
 				2D05D95222CAAF3B007DF7DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
