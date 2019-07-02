@@ -86,7 +86,6 @@ class DBManager {
         guard
             let url = Bundle.main.url(forResource: "Data", withExtension: "plist"),
             let list = NSDictionary(contentsOf: url) as? Dictionary<String, Any> else {
-                print("no")
                 return []
         }
         
