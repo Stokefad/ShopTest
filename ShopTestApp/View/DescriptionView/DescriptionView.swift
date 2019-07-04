@@ -42,6 +42,9 @@ class DescriptionView : UIView {
         
         titleLabel.text = product.title
         priceLabel.text = String(describing: product.price)
+        titleLabel.frame.size = CGSize(width: 0.4 * self.frame.width, height: 10000)
+        titleLabel.numberOfLines = 0
+        
         descriptionTV.text = product.descriptionStr
         descriptionTV.isEditable = false
         
@@ -51,7 +54,7 @@ class DescriptionView : UIView {
         
         titleLabel.frame.origin = CGPoint(x: 20, y: 120)
         priceLabel.frame.origin = CGPoint(x: self.frame.width - priceLabel.frame.width - 20, y: 120)
-        descriptionTV.frame.origin = CGPoint(x: 20, y: 180)
+        descriptionTV.frame.origin = CGPoint(x: 20, y: titleLabel.frame.origin.y + titleLabel.frame.height + 15)
         exitView.frame = CGRect(x: 20, y: 50, width: 40, height: 40)
         exitView.backgroundColor = UIColor.black
         exitView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(exitAction)))

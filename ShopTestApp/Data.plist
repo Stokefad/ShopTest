@@ -29,5 +29,23 @@
 		<key>description</key>
 		<string>fdsfdsfsd</string>
 	</dict>
+	<key>ItemFour</key>
+	<dict>
+		<key>price</key>
+		<integer>15</integer>
+		<key>title</key>
+		<string>ItemFour</string>
+		<key>description</key>
+		<string>fdsfdsfsdfdsfdsfdsfdsfs</string>
+	</dict>
+	<key>ItemFive</key>
+	<dict>
+		<key>price</key>
+		<integer>15</integer>
+		<key>title</key>
+		<string>ItemFive</string>
+		<key>description</key>
+		<string>fdsfdsfsdfdsfdsfdsfdsfs</string>
+	</dict>
 </dict>
 </plist>

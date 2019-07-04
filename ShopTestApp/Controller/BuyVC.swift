@@ -32,7 +32,7 @@ class BuyVC: UIViewController, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60.0
+        return CGFloat(returnTVHeight(string: SellBuyManager.shared.sellBRToRetrieve.value[indexPath.row].title) + 20)
     }
     
 }
@@ -54,5 +54,22 @@ extension BuyVC {
                 self.view.addSubview(DescriptionView(sender: self, product: SellBuyManager.shared.sellBRToRetrieve.value[indexPath.row]))
             }
         }).disposed(by: dBag)
+    }
+}
+
+// cell sizer
+
+extension BuyVC {
+    private func returnTVHeight(string : String) -> Double {
+        
+        let descriptionTV = UITextView()
+        
+        descriptionTV.frame.size = CGSize(width: UIScreen.main.bounds.width * 0.3, height: 10000)
+        descriptionTV.font = UIFont.systemFont(ofSize: 17)
+        
+        descriptionTV.text = string
+        descriptionTV.sizeToFit()
+        
+        return Double(descriptionTV.frame.height)
     }
 }

@@ -94,6 +94,8 @@ class DBManager {
         dictList.append(list["ItemOne"] as! [String : Any])
         dictList.append(list["ItemTwo"] as! [String : Any])
         dictList.append(list["ItemThree"] as! [String : Any])
+        dictList.append(list["ItemFour"] as! [String : Any])
+        dictList.append(list["ItemFive"] as! [String : Any])
         
         var modelList = [ProductModel]()
         
